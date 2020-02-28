@@ -52,7 +52,7 @@ app.use('/api/me', ensureAuth);
 
 
 // get the api by character name
-app.get('/api/character ', async (req, res) => {
+app.get('/api/character', async (req, res) => {
     try {
         const data = await request.get(`https://rickandmortyapi.com/api/character/?name=${req.query.search}`);
 
