@@ -18,6 +18,7 @@ async function run() {
                 id SERIAL PRIMARY KEY,
                 name VARCHAR(256) NOT NULL,
                 species VARCHAR(256) NOT NULL,
+                image VARCHAR(256) NOT NULL,
                 user_id INTEGER NOT NULL REFERENCES users(id)
             );
         `);
