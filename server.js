@@ -15,6 +15,7 @@ const createAuthRoutes = require('./lib/auth/create-auth-routes');
 const request = require('superagent');
 // Application Setup
 const app = express();
+
 app.use(morgan('dev')); // http logging
 app.use(cors()); // enable CORS request
 app.use(express.json()); // enable reading incoming json data
